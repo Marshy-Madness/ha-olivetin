@@ -1,0 +1,12 @@
+start_action:
+  fields:
+    action:
+      required: true
+      example: "Restart Plex"
+      selector:
+        text:
+    arguments:
+      required: false
+      example: '{"container": "plex"}'
+      selector:
+        object:

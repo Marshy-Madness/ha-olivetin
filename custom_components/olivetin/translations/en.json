@@ -1,0 +1,50 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to OliveTin",
+        "description": "OliveTin's web address as seen from Home Assistant. Leave username and password empty if OliveTin has no login.",
+        "data": {
+          "url": "URL",
+          "username": "Username",
+          "password": "Password",
+          "verify_ssl": "Verify SSL certificate"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Log in to OliveTin again",
+        "description": "OliveTin refused the saved login.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "OliveTin rejected the username or password (or requires a login and none was given).",
+      "cannot_connect": "Could not connect. Is OliveTin running at that address?",
+      "invalid_response": "Something answered, but it doesn't look like the OliveTin API.",
+      "unknown": "Unexpected error, see the Home Assistant log."
+    },
+    "abort": {
+      "already_configured": "This OliveTin instance is already configured.",
+      "reauth_successful": "Login updated."
+    }
+  },
+  "services": {
+    "start_action": {
+      "name": "Start action",
+      "description": "Starts an OliveTin action, optionally with argument values.",
+      "fields": {
+        "action": {
+          "name": "Action",
+          "description": "The action's title (or its id, shown in the button's attributes)."
+        },
+        "arguments": {
+          "name": "Arguments",
+          "description": "Argument values by name. Arguments left out use their default."
+        }
+      }
+    }
+  }
+}
