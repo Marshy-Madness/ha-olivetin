@@ -2,7 +2,7 @@
 
 Author: [MarshyMadness](https://github.com/Marshy-Madness)
 
-A Home Assistant integration for [OliveTin](https://www.olivetin.app/), which runs predefined shell commands from a web UI. Built for the OliveTin 2.x API.
+A Home Assistant integration for [OliveTin](https://www.olivetin.app/), which runs predefined shell commands from a web UI. Built for the OliveTin 3000+ API (Connect RPC); OliveTin 2.x is not supported.
 
 ## Features
 

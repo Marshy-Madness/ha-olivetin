@@ -23,7 +23,7 @@
     "error": {
       "invalid_auth": "OliveTin rejected the username or password (or requires a login and none was given).",
       "cannot_connect": "Could not connect. Is OliveTin running at that address?",
-      "invalid_response": "Something answered, but it doesn't look like the OliveTin API.",
+      "invalid_response": "Something answered, but it doesn't look like the OliveTin API. OliveTin 3000 or newer is required.",
       "unknown": "Unexpected error, see the Home Assistant log."
     },
     "abort": {
